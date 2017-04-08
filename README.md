@@ -44,7 +44,7 @@ $ git clone https://github.com/jiayilai/SearchEngine.git
 	```
 Modify path string constant for Edgelist.txt and crawl_data as following example. Run and generate ***external_pageRankFile.txt***
 
-	```python
+	```
 	base = "/Library/WebServer/Documents/solr-6.5.0/crawl_data/"
 	edgelistPath="/Users/laijiayi/IdeaProjects/hw4_572/src/main/resources/Edgelist.txt"
 	```
