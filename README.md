@@ -60,7 +60,7 @@ Modify path string constant for Edgelist.txt and crawl_data as following example
 12. Modify ***solr-6.5.0/server/solr/myexample/conf/solrconfig.xml*** adding:
 	
 	```xml
-	<listener event="newSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>	<listener event="firstSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>  ```
+	<listener event="newSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>	<listener event="firstSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>  	```
 13. Start apache server and find the root directory. Put sorl-6.5.0 into the root directory.
 14. Download solr-php-client and put it into apache root.
 	```$ git clone https://github.com/PTCInc/solr-php-client```
