@@ -37,6 +37,7 @@ $ git clone https://github.com/jiayilai/SearchEngine.git
 	private final static String mapFilePath = "src/main/resources/mapCNNDataFile.csv";
 	```
 8. Download and install networkX. (Update python to 3.6.1.)
+
    [Download tutorial] (https://networkx.github.io/documentation/networkx-1.10/download.html)
 	[Install tutorial] (https://networkx.github.io/documentation/networkx-1.10/install.html)
 9. Download Pycharm python project, pagerank, which is used to generate pagerank file by command
@@ -44,8 +45,7 @@ $ git clone https://github.com/jiayilai/SearchEngine.git
 	```
 Modify path string constant for Edgelist.txt and crawl_data as following example. Run and generate ***external_pageRankFile.txt***
 	
-	```
-	base = "/Library/WebServer/Documents/solr-6.5.0/crawl_data/"
+	```	base = "/Library/WebServer/Documents/solr-6.5.0/crawl_data/"
 	edgelistPath="/Users/laijiayi/IdeaProjects/hw4_572/src/main/resources/Edgelist.txt"
 	```
 
