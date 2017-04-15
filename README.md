@@ -18,7 +18,7 @@ $ git clone https://github.com/jiayilai/SearchEngine.git
 1. Download Apache Solr 6.5.0.
 2. Install Solr through terminal (MAC). 
 	[More installation tutorial](http://lucene.apache.org/solr/quickstart.html)
-3. Cd into solr-6.5.0 folder. Start Solr using command ```bin/solr```.
+3. Cd into solr-6.5.0 folder. Start Solr using command ```bin/solr start```.
 	Start and create a new core named as myexample using command ```$ bin/solr create –c myexample```.
 4. Put all the crawled html webpages from Crawler4j into the folder named **solr-6.5.0/crawl_data**.
 5. Using TIKA to index html files inherently. Index the html files using command
@@ -61,12 +61,15 @@ Modify path string constant for Edgelist.txt and crawl_data as following example
 12. Modify ***solr-6.5.0/server/solr/myexample/conf/solrconfig.xml*** adding:
 	
 	```xml
-	<listener event="newSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>	<listener event="firstSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>  	```
+	<listener event="newSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>
+	<listener event="firstSearcher" class="org.apache.solr.schema.ExternalFileFieldReloader"/>
+  	```
 13. Start apache server and find the root directory. Put sorl-6.5.0 into the root directory.
 14. Download solr-php-client and put it into apache root.
 	```$ git clone https://github.com/PTCInc/solr-php-client```
 	
-## Release History
+
+## Release History
 
 * 0.1.0
     * The first proper release
